@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Demandas</title>
+    <link rel="stylesheet" type="text/css" href="styleDemandas.css">
+</head>
+    <body class="home">
+        
+        <header class="headerPrincipal">
+            
+            <div class="container">
+                <a href="home.html"></a>
+                <img class="logo" src="logo.png" > </img>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html"> <b>Home</b> </a></li>
+                    <li><a href="funcionarios.html"><b>Funcionários</b> </a></li>
+                    <li><a href="InfoProdutos.html"><b>Informações de Produtos</b></a></li>
+                </ul>
+            </nav>
+            
+            <div class="perfil"> 
+                <img class="profile" src="Profile.png" > </img>
+                <br/><br/>
+                <a href="perfil.html"><button class="botao"><b>Perfil</b></button></a>
+            </div>
+            
+        </header>
+
+	<main>
+	
+  <h1>Formulário de Demandas de Produção de Sapatos</h1>
+  
+  <form>
+    <fieldset>
+      <legend><b>Demanda de Produção</b></legend>
+      
+      <label for="tipo-material">Tipo de Material:</label>
+      <input type="text" id="tipo-material" name="tipo-material" required><br>
+      
+      <label for="cor-material">Cor do Material:</label>
+      <input type="text" id="cor-material" name="cor-material" required><br>
+      
+      <label for="tipos-adesivos">Tipos de Adesivos e Produtos Auxiliares:</label>
+      <input type="text" id="tipos-adesivos" name="tipos-adesivos" required><br>
+      
+      <label for="tipo-tinta">Tipo de Tinta:</label>
+      <input type="text" id="tipo-tinta" name="tipo-tinta" required><br>
+      
+      <label for="cor-tinta">Cor da Tinta:</label>
+      <input type="text" id="cor-tinta" name="cor-tinta" required><br>
+      
+      <label for="cor-linha">Cor da Linha:</label>
+      <input type="text" id="cor-linha" name="cor-linha" required><br>
+      
+      <label for="espessura-linha">Espessura da Linha:</label>
+      <input type="text" id="espessura-linha" name="espessura-linha" required><br>
+      
+      <label for="espacamento-costura">Espaçamento da Costura em relação à Borda:</label>
+      <input type="text" id="espacamento-costura" name="espacamento-costura" required><br>
+      
+      <label for="tamanho-costura">Tamanho da Costura:</label>
+      <input type="text" id="tamanho-costura" name="tamanho-costura" required><br>
+      
+      <label for="modo-preparacao">Modo de Preparação de Peças:</label>
+      <input type="text" id="modo-preparacao" name="modo-preparacao" required><br>
+      
+      <label for="tempo-secagem">Tempo de Secagem:</label>
+      <input type="text" id="tempo-secagem" name="tempo-secagem" required><br>
+      
+      <label for="temperatura-equipamento">Temperatura do Equipamento em relação ao Material Utilizado:</label>
+      <input type="text" id="temperatura-equipamento" name="temperatura-equipamento" required><br>
+      
+      <label for="regulagem-equipamentos">Regulagem dos Equipamentos em relação ao Calçado Produzido:</label>
+      <input type="text" id="regulagem-equipamentos" name="regulagem-equipamentos" required><br>
+      
+      <label for="padrao-qualidade">Padrão de Qualidade em todos os Processos:</label>
+      <input type="text" id="padrao-qualidade" name="padrao-qualidade" required><br>
+      
+      <label for="padrao-procedimento">Padrão de Procedimento de Produção:</label>
+      <input type="text" id="padrao-procedimento" name="padrao-procedimento" required><br>
+      
+      
+      <br>
+      <input class="botaoSalvar"type="submit" value="Criar Demanda">
+    </fieldset>
+  </form>
+  
+  <h2>Demandas Criadas</h2>
+  </main>
+  
+  <script>
+    // Você pode usar JavaScript para capturar os dados do formulário e exibir as demandas criadas
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+      
+      // Obtenha os valores dos campos do formulário
+      var tipoMaterial = document.getElementById('tipo-material').value;
+      var corMaterial = document.getElementById('cor-material').value;
+      var tiposAdesivos = document.getElementById('tipos-adesivos').value;
+      var tipoTinta = document.getElementById('tipo-tinta').value;
+      var corTinta = document.getElementById('cor-tinta').value;
+      var corLinha = document.getElementById('cor-linha').value;
+      var espessuraLinha = document.getElementById('espessura-linha').value;
+      var espacamentoCostura = document.getElementById('espacamento-costura').value;
+      var tamanhoCostura = document.getElementById('tamanho-costura').value;
+      var modoPreparacao = document.getElementById('modo-preparacao').value;
+      var tempoSecagem = document.getElementById('tempo-secagem').value;
+      var temperaturaEquipamento = document.getElementById('temperatura-equipamento').value;
+      var regulagemEquipamentos = document.getElementById('regulagem-equipamentos').value;
+      var padraoQualidade = document.getElementById('padrao-qualidade').value;
+      var padraoProcedimento = document.getElementById('padrao-procedimento').value;
+      
+      // Crie um novo elemento de seção para exibir a demanda criada
+      var newSection = document.createElement('section');
+      var newHeading = document.createElement('h3');
+      
+      newHeading.textContent = 'Nova Demanda';
+      newSection.appendChild(newHeading);
+      
+      // Crie parágrafos para exibir cada campo da demanda
+      var demandaHTML = '';
+      demandaHTML += '<p><strong>Tipo de Material:</strong> ' + tipoMaterial + '</p>';
+      demandaHTML += '<p><strong>Cor do Material:</strong> ' + corMaterial + '</p>';
+      demandaHTML += '<p><strong>Tipos de Adesivos e Produtos Auxiliares:</strong> ' + tiposAdesivos + '</p>';
+      demandaHTML += '<p><strong>Tipo de Tinta:</strong> ' + tipoTinta + '</p>';
+      demandaHTML += '<p><strong>Cor da Tinta:</strong> ' + corTinta + '</p>';
+      demandaHTML += '<p><strong>Cor da Linha:</strong> ' + corLinha + '</p>';
+      demandaHTML += '<p><strong>Espessura da Linha:</strong> ' + espessuraLinha + '</p>';
+      demandaHTML += '<p><strong>Espaçamento da Costura em relação à Borda:</strong> ' + espacamentoCostura + '</p>';
+      demandaHTML += '<p><strong>Tamanho da Costura:</strong> ' + tamanhoCostura + '</p>';
+      demandaHTML += '<p><strong>Modo de Preparação de Peças:</strong> ' + modoPreparacao + '</p>';
+      demandaHTML += '<p><strong>Tempo de Secagem:</strong> ' + tempoSecagem + '</p>';
+      demandaHTML += '<p><strong>Temperatura do Equipamento em relação ao Material Utilizado:</strong> ' + temperaturaEquipamento + '</p>';
+      demandaHTML += '<p><strong>Regulagem dos Equipamentos em relação ao Calçado Produzido:</strong> ' + regulagemEquipamentos + '</p>';
+      demandaHTML += '<p><strong>Padrão de Qualidade em todos os Processos:</strong> ' + padraoQualidade + '</p>';
+      demandaHTML += '<p><strong>Padrão de Procedimento de Produção:</strong> ' + padraoProcedimento + '</p>';
+      
+      newSection.innerHTML = demandaHTML;
+      
+      // Adicione a nova seção à lista de demandas criadas
+      document.body.insertBefore(newSection, document.querySelector('script'));
+      
+      // Limpe o formulário após criar a demanda
+      document.querySelector('form').reset();
+    });
+  </script>
+
+      <a href="home.html"><button class="botaoVoltar"><b>Voltar</b></button></a>
+        
+        <footer>
+                    <p>Copyright © 2023 <strong>ByteWorks</strong> </p>
+        </footer>
+        
+        
+    </body>
+</html>

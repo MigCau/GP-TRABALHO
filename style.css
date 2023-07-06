@@ -1,0 +1,251 @@
+/* CORPO PRINCIPAL */
+
+/* Estilos básicos */ 
+	body.home {
+	margin: 0;
+    padding: 0;
+	font-family: Arial Rounded MT Negrito  ; 
+	background-color: white;
+}
+
+/* Estilos para o cabeçalho */
+.headerPrincipal {
+  background-color: #d2142c;
+  color: white;
+  font-size: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+
+/* Input PESQUISAR */
+form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #d2142c;
+    border-radius: 3px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #d2142c;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+    
+  }
+  
+/* lista do cabeçalho */
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+nav li {
+	margin: 25px ;
+	min-width: 100px;
+	font-size: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	
+}
+.logo{
+ width:150px;
+ height:150px;
+}
+.perfil{
+    margin: 10px;
+}
+.profile{
+    width:90px;
+    height:90px;
+    margin-left: 26px;
+    border-color:#d2142c;
+}
+.botao{
+  margin:20px;
+  direction: column;
+  width: 100px;
+  border-radius:4px;
+  border-color:#d2142c;
+  outline: none;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+}
+/* Estilo do corpo */
+.containerCorpo{
+	align-items: center;
+	width: 100%;
+  background-color: white; 
+	flex-direction: row;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  align-content: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+  background-color: #e3e2e2;
+}
+
+section {
+  margin: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 380px;
+  height: 380px;
+  border-radius: 50px;
+  box-shadow: gray 6px 5px 4px;
+  font-family: Arial;
+  font-size: 15px;
+  flex-direction: column;
+  border: 2px solid black;
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: 1.4;
+}
+
+h2{
+  color: red;
+}
+
+.mi-seccion img {
+  /* Estilos para la imagen */
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.gr-seccion img {
+  size:100px;
+  width:300px;
+}
+
+.grafico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: gray 6px 5px 4px;
+  font-family: Arial;
+  font-size: 15px;
+  flex-direction: column;
+  border: 2px solid black;
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: 1.4;
+}
+
+.dono{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #ffffff;
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: gray 6px 5px 4px;
+  font-family: Arial;
+  font-size: 15px;
+  flex-direction: column;
+  border: 2px solid black;
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: 1.4;
+}
+
+.dn {
+  width: 100px;
+  height: 100px;
+  justify-content: flex-end;
+}
+
+.frase{
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 15px;
+  flex-direction: column;
+}
+/* logo rodapé */
+.img
+{
+  align-items: left;
+  size:10px;
+  width:230px;
+  padding-top: 20px;
+}
+
+/* Rodapé */
+footer
+{
+color: white;
+align-items: center;
+justify-content:center;
+background-color:#d2142c;
+height: 13%;
+width: 100%;
+position: absolute 0;
+display:flex;
+
+
+}
+
+/* Copyright */
+.rodape
+{
+	align-items:center;
+    color:white;
+    text-align: center;
+    padding-left:;
+	margin-right:45%;
+}
+
+/* logo rodapé */
+.img
+{
+	align-items: left;
+    size:10px;
+    width:230px;
+    padding-top: 20px;
+}
+

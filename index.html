@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+    <title>Login</title>
+    <link rel="stylesheet" href="styleLogin.css" type="text/css">
+    <script src="scriptLogin.js"></script>
+        
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <br>
+    <img src="ByteWorks.png"/>
+    <div id="login-section">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button class="entrar" onclick="Entrar()" >Entrar</button>
+
+        </form>
+        <p>Ainda não possui uma conta? <button onclick="showRegistrationForm()">Cadastrar</button></p>
+    </div>
+
+    <div id="registration-section" style="display: none;">
+        <h2>Cadastro</h2>
+        <form>
+            <label for="username"> Nome de usuário:</label>
+            <input type="text" id="new-username" name="new-username" required><br>
+
+            <label for="new-password">Senha:</label>
+            <input type="password" id="new-password" name="new-password" required><br>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+        <p>Já possui uma conta? <button onclick="showLoginForm()">Voltar para o Login</button></p>
+    </div>
+</body>
+</html>

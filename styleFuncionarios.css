@@ -1,0 +1,162 @@
+/* CORPO PRINCIPAL */
+
+/* Estilos básicos */ 
+body.home {
+	margin: 0;
+    padding: 0;
+	font-family: Arial Rounded MT Negrito  ; 
+	background-color:  #e3e2e2;
+}
+
+/* Estilos para o cabeçalho */
+.headerPrincipal {
+  background-color: #d2142c;
+  color: white;
+  font-size: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+/* lista do cabeçalho */
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+nav li {
+	margin: 25px ;
+	min-width: 100px;
+	font-size: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	
+}
+.logo{
+ width:150px;
+ height:150px;
+}
+.perfil{
+    margin: 10px;
+}
+.profile{
+    width:90px;
+    height:90px;
+    margin-left: 26px;
+    border-color:#d2142c;
+}
+.botao{
+  margin:20px;
+  direction: column;
+  width: 100px;
+  border-radius:4px;
+  border-color:#d2142c;
+  outline: none;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+}
+
+/* Estilo do corpo */
+.containerCorpo{
+    align-items: center;
+    margin: 45px;
+    background-color:  #e3e2e2; 
+    flex-direction: row;
+    display:flex;     
+    justify-content: space-around; 
+}
+section{     
+    background-color: #ffffff;     
+    width: 250px;     
+    height:300px;          
+    border-radius: 4px ;     
+    align-items: center;     
+    justify-content: center ;
+    border: 2px solid black;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}     
+.perfil2
+{
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.nome
+{
+   text-align: center; 
+   margin-top: 1px;
+   font-family: Georgia;
+}
+
+.cargo
+{
+    text-align: center;
+    color: black;
+}
+.data
+{
+    text-align: center;
+    font-size: 15px;
+}
+.tempo
+{
+  
+    font-size: 15px;
+    margin-left: 26px;
+}
+.botaoVoltar{
+    margin:20px;
+    direction: column;
+    width: 100px;
+    border-radius:4px;
+    border-color:#d2142c;
+    outline: none;
+    overflow: visible;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+}
+
+
+/* Rodapé */
+footer
+{
+color: white;
+align-items: center;
+justify-content:center;
+background-color:#d2142c;
+height: 13%;
+width: 100%;
+position: absolute 0;
+display:flex;
+ align-items:center;
+color:white;
+ text-align: center;
+ margin-right:45%;
+font-size: 16px;
+}
